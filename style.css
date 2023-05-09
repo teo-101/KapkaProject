@@ -30,7 +30,6 @@ body {
 #headerContainer img {
     width: 100%;
     height: fit-content;
-    
     z-index: -1;
 }
 
@@ -45,12 +44,18 @@ nav {
     transition: all .3s ease-in-out;
     display: flex;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
-nav h2 {
+#navTitle {
+    width: 100%;
     color:white;
     transition: all 1s ease-in-out;
+    position: absolute;
+}
+
+nav:hover #navTitle {
+    transform: translateX(-43%);
 }
 
 main {
@@ -65,4 +70,37 @@ main {
 #biografie p {
     text-indent: 36px;
     font-size: 25px;
+}
+
+#menuImg {
+    width: 30px;
+    height: fit-content;
+    position: absolute;
+    right: 10px;
+    transition: transform .25s ease-in-out, opacity 1s ease-in-out;
+}
+
+nav:hover #menuImg {
+    transform: rotate(90deg);
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#menuContainer {
+    width: 100%;
+    height: fit-content;
+    transition: transform 1s ease-in-out, opacity 1.5s ease-in-out;
+    position: absolute;
+    transform: translateX(55%);
+    opacity: 0;
+    z-index: 1000;
+}
+
+nav:hover #menuContainer {
+    transform: translateX(41%);
+    opacity: 1;
 }
