@@ -1,5 +1,6 @@
 const imagine = document.getElementById('headerImg');
 const nav = document.getElementById('navigare');
+const navTitle = document.querySelector('nav h2');
 
 window.addEventListener('scroll', () => {
   const scrollTop = document.documentElement.scrollTop;
@@ -9,9 +10,11 @@ window.addEventListener('scroll', () => {
   imagine.style.transform = `translateY(${translateY}%)`;
 
   if (scrollPercentage*100 > 39) {
-    nav.style.opacity = '100%';
+    nav.style.opacity = '1';
+    navTitle.style.opacity = '1';
+  } else {
+    nav.style.opacity = '0';
+    navTitle.style.opacity = '0';
   }
-  else if (scrollPercentage*100 < 39) {
-    nav.style.opacity = `0%`;
-  }
+    
 });

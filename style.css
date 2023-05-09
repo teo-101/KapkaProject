@@ -1,5 +1,9 @@
 @import url('https://fonts.cdnfonts.com/css/gt-walsheim-pro');
 
+* {
+    font-family: 'GT Walsheim Pro';
+}
+
 body {
     margin: 0;
     scroll-behavior: smooth;
@@ -7,7 +11,6 @@ body {
 
 #pageTitle {
     text-align: center;
-    font-family: 'GT Walsheim Pro';
     font-size: 8rem;
     font-weight: bold;
     color:white;
@@ -40,4 +43,26 @@ nav {
     z-index: 999;
     position: fixed;
     transition: all .3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav h2 {
+    color:white;
+    transition: all 1s ease-in-out;
+}
+
+main {
+    margin: 0 15px 0 15px;
+}
+
+#biografie h2 {
+    font-size: 40px;
+    text-indent: calc(36px + 0.5cm);
+}
+
+#biografie p {
+    text-indent: 36px;
+    font-size: 25px;
 }
