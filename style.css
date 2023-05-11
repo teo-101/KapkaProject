@@ -104,3 +104,27 @@ nav:hover #menuContainer {
     transform: translateX(41%);
     opacity: 1;
 }
+
+#biografie {
+    margin-top: 60px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+   
+::-webkit-scrollbar-track {
+    background: white;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+   
+::-webkit-scrollbar-thumb {
+    background: palegreen;
+    border-radius: 5px;
+}
+
+.noSelect {
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
