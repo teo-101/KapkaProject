@@ -13,7 +13,7 @@ body {
     text-align: center;
     font-size: 8rem;
     font-weight: bold;
-    color:white;
+    color:#576776;
     z-index: 0;
     position: absolute;
 }
@@ -84,7 +84,7 @@ nav:hover #menuImg {
     transform: rotate(90deg);
 }
 
-nav a {
+.nav-button {
     color: white;
     font-weight: bold;
     font-size: 20px;
