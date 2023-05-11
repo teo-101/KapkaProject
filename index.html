@@ -11,18 +11,18 @@
   <nav id="navigare">
     <h2 id="navTitle">Mihai Eminescu</h2>
 
-    <img src="src/menu.png" id="menuImg">
+    <img src="src/menu.png" id="menuImg" class="no-select">
 
     <div id="menuContainer">
-      <a>Test</a>
-      <a style="margin-left: 20px">Test</a>
-      <a style="margin-left: 20px">Test</a>
+      <a onclick="document.getElementById('headerContainer').scrollIntoView({behavior:'smooth'});" class="nav-button">Home</a>
+      <a style="margin-left: 20px" class="nav-button">Test</a>
+      <a style="margin-left: 20px" class="nav-button">Test</a>
     </div>
   </nav>
 
   <div id="headerContainer">
     <h1 id="pageTitle">Mihai Eminescu</h1>
-    <img src="src/back" id="headerImg">
+    <img src="src/header.webp" id="headerImg" class="no-select">
   </div>
 
   <main>
