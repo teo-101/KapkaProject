@@ -101,7 +101,7 @@ nav:hover #menuImg {
 }
 
 nav:hover #menuContainer {
-    transform: translateX(41%);
+    transform: translateX(38%);
     opacity: 1;
 }
 
