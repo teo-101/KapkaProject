@@ -58,12 +58,38 @@
       <img src="src/IMG_20230510_125210349~4.jpg" style="width: 500px; height: fit-content;">
     </div>
 
+    <h2>&bullet; Highlights</h2>
+
+    <div style="text-align: center;">
+      <div id="cardshowContainer">
+        <div class="card" id="card0"><img src="src/header.webp"></div>
+        <div class="card" id="card1"><img src="src/header.webp"></div>
+        <div class="card" id="card2"><img src="src/header.webp"></div>
+      </div>
+    
+      <div id="cardshowControls">
+        <div id="arrowLeft" onclick="cardSwapLeft();">
+          <img src="src/arrow.png" width="35px" height="fit-content" style="transform: rotate(90deg);">
+        </div>
+    
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+        <div class="indicator"></div>
+    
+        <div id="arrowRight" onclick="cardSwapRight();">
+          <img src="src/arrow.png" width="35px" height="fit-content" style="transform: rotate(-90deg);">
+        </div>
+      </div>
+    </div>
+
+
     <h2>&bullet; Localizare Muzeu</h2>
 
     <div id="sec3">
-      <iframe width="500" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.56526052951813%2C47.17843751558366%2C27.56870985031128%2C47.17971187801535&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/47.17907/27.56699">Vezi hartă mai mare</a></small>
+      <iframe width="850" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.56526052951813%2C47.17843751558366%2C27.56870985031128%2C47.17971187801535&amp;layer=mapnik"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=19/47.17907/27.56699">Vezi hartă mai mare</a></small>
     </div>
   </main>
   <script src="scroll.js"></script>
+  <script src="cardshow.js"></script>
 </body>
 </html>

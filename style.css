@@ -7,6 +7,7 @@
 body {
     margin: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 #pageTitle {
@@ -152,3 +153,73 @@ nav:hover #menuContainer {
     height: 400px;
     width: fit-content;
 }
+
+
+#cardshowControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+}
+
+#arrowLeft {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+#arrowRight {
+    background-color: white;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-left: 15px;
+}
+
+.indicator:last-child {
+    margin-right: 0;
+}
+
+#cardshowContainer {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%; /* Add this line to make the container width fit its content */
+    margin: 0 auto; /* Add this line to center the container */
+  }
+  
+  .card {
+    width: 1800px;
+    height: 400px;
+    margin: 0 10px;
+    background-color: black;
+    transition: all .4s ease-in-out;
+  }
+
+  .card img {
+    width: 1800px;
+    height: fit-content;
+  }
+
+  #cardshowControls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .indicator {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: gray;
+    cursor: pointer;
+  }
+
+  .indicator.active {
+    background-color: black;
+  }
