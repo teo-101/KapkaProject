@@ -196,13 +196,12 @@ p {
     width: 1800px;
     height: 400px;
     margin: 0 10px;
-    background-color: black;
     transition: all .4s ease-in-out;
   }
 
   .card img {
-    width: 1800px;
-    height: fit-content;
+    width: fit-content;
+    height: 400px;
   }
 
   #cardshowControls {
