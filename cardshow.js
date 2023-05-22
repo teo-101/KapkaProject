@@ -7,6 +7,20 @@ const cards = [
   document.getElementById('card2')
 ];
 
+let cnt1 = 0; // Initialize the cnt variable to 0
+const indicators = [
+  document.getElementById('indicator0'),
+  document.getElementById('indicator1'),
+  document.getElementById('indicator2')
+];
+
+function updateIndicators() {
+  for (let i = 0; i < indicators.length; i++) {
+    indicators[i].classList.remove('active');
+  }
+  indicators[cnt1].classList.add('active');
+}
+
 function cardSwapRight() {
   const lastCard = cards[cards.length - 1];
   cards.pop(); // Remove the last card from the array
@@ -24,8 +38,8 @@ function cardSwapRight() {
     }
     cnt = 1;
   }
+  updateIndicators();
 }
-
 
 function cardSwapLeft() {
   const firstCard = cards.shift(); // Remove the first card from the array
@@ -44,5 +58,6 @@ function cardSwapLeft() {
     }
     cnt = 1;
   }
+  updateIndicators();
 }
 
