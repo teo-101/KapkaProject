@@ -54,6 +54,8 @@ nav {
     color:white;
     transition: all 1s ease-in-out;
     position: absolute;
+    margin: 0;
+    font-size: 30px;
 }
 
 nav:hover #navTitle {
@@ -67,6 +69,7 @@ main {
 h2 {
     font-size: 40px;
     text-indent: calc(36px + 0.5cm);
+    margin: 80px 0 40px 0;
 }
 
 #biografie p {
@@ -261,4 +264,41 @@ p {
 
   #photoContainer img:last-child {
     margin-right: 0;
+  }
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    height: 150px;
+    color:white;
+    align-items: center;
+  }
+
+  .contactBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    font-size: 20px;
+    margin-right: 150px;
+    justify-content: center;
+  }
+
+  .contactBox:last-of-type {
+    margin-right: 0;
+  }
+
+  .contactBox img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 15px;
+  }
+
+  .contactBox a {
+    text-decoration: none;
+    color: white;
   }

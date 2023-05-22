@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.cdnfonts.com/css/indubitably-nf" rel="stylesheet">
+  <link rel="icon" href="src/icon/favicon.png">
   <link rel="stylesheet" href="style.css"></link>
   <title>Mihai Eminescu</title>
 </head>
@@ -11,12 +12,12 @@
   <nav id="navigare" class="noSelect">
     <h2 id="navTitle">Mihai Eminescu</h2>
 
-    <img src="src/menu.png" id="menuImg" class="no-select">
+    <img src="src/icon/menu.png" id="menuImg" class="no-select">
 
     <div id="menuContainer">
       <a onclick="document.getElementById('headerContainer').scrollIntoView({behavior:'smooth'});" class="nav-button">Home</a>
       <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('sec3').scrollIntoView({behavior:'smooth'});">Find Museum</a>
-      <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('').scrollIntoView({behavior:'smooth'});">Contact</a>
+      <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('my-footer').scrollIntoView({behavior:'smooth'});">Contact</a>
     </div>
   </nav>
 
@@ -34,13 +35,13 @@
       </p>
 
       <div class="quotes">
-        <img src="src/quote.png">
+        <img src="src/icon/quote.png">
         <div class="quotesText">Trăiască Nația!</div>
         <div class="author">- Salutul lui Eminescu</div>
       </div>
     </div>
 
-    <h2 style="margin: 80px 0 0 0;">&bullet; Pe urmele marelui poet Mihai Eminescu</h2>
+    <h2>&bullet; Pe urmele marelui poet Mihai Eminescu</h2>
 
     <div id="sec1"> 
       <p style="margin-top: 0;">
@@ -62,8 +63,8 @@
       Chemat de Titu Maiorescu la Iași, acesta ajunge să publice la Junimea, unde îl atrage și pe prietenul său, Ion Creangă. De asemenea, odată ajuns la Iași poetul lucrează ca bibliotecar, vânzător la teatru, director școlar și, ulterior, ca revizor școlar.
     </p>
 
-    <div class="quotes" style="margin-bottom: 10px;">
-      <img src="src/quote.png">
+    <div class="quotes">
+      <img src="src/icon/quote.png">
       <div class="quotesText">Sunt Năruit</div>
       <div class="author">- Ultimele vorbe ale lui Eminescu</div>
     </div>
@@ -114,7 +115,7 @@
     
       <div id="cardshowControls">
         <div id="arrowLeft" onclick="cardSwapLeft();">
-          <img src="src/arrow.png" width="35px" height="fit-content" style="transform: rotate(90deg);">
+          <img src="src/icon/arrow.png" width="35px" height="fit-content" style="transform: rotate(90deg);">
         </div>
     
         <div class="indicator" id="indicator0"></div>
@@ -136,7 +137,7 @@
         <div class="indicator" id="indicator2"></div>
 
         <div id="arrowRight" onclick="cardSwapRight();">
-          <img src="src/arrow.png" width="35px" height="fit-content" style="transform: rotate(-90deg);">
+          <img src="src/icon/arrow.png" width="35px" height="fit-content" style="transform: rotate(-90deg);">
         </div>
       </div>
     </div>
@@ -147,8 +148,29 @@
     <div id="sec3" style="width: 100%; display: flex; justify-content: center;">
       <iframe width="850" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.56526052951813%2C47.17843751558366%2C27.56870985031128%2C47.17971187801535&amp;layer=mapnik"></iframe><br/><small></small>
     </div>
+
+    <h2>&bullet; Aplicatie Interactiva</h2>
+
+    <div style="width: 100%; display: flex; justify-content: center;">
+      <iframe style="max-width:100%; margin-bottom: 20px;" src="https://wordwall.net/embed/0e674e70a82a45c7b133e6460f6d3569?themeId=1&templateId=11&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+    </div>
   </main>
-  <script src="scroll.js"></script>
-  <script src="cardshow.js"></script>
+
+  <footer id="my-footer">
+    <div class="contactBox">
+      <img src="src/icon/phone.png">
+      <div>0770 156 585</div>
+    </div>
+    <div class="contactBox">
+      <img src="src/icon/email.png">
+      <div>muzeul.eminescu.iasi@gmail.com</div>
+    </div>
+    <div class="contactBox">
+      <img src="src/icon/github.png">
+      <a href="https://github.com/teo-101/EminescuProject">Github.com</a>
+    </div>
+  </footer>
+  <script src="script/scroll.js"></script>
+  <script src="script/cardshow.js"></script>
 </body>
 </html>
