@@ -16,7 +16,8 @@
 
     <div id="menuContainer">
       <a onclick="document.getElementById('headerContainer').scrollIntoView({behavior:'smooth'});" class="nav-button">Home</a>
-      <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('sec3').scrollIntoView({behavior:'smooth'});">Find Museum</a>
+      <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('loc').scrollIntoView({behavior:'smooth'});">Find Museum</a>
+      <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('joc').scrollIntoView({behavior:'smooth'});">Activity </a>
       <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('my-footer').scrollIntoView({behavior:'smooth'});">Contact</a>
     </div>
   </nav>
@@ -34,12 +35,13 @@
         Poporul român se poate mândri cu o mare varietate de minți luminate, de personalități care au îmbogățit patrimoniul cultural și au dus numele țării în cele mai îndepărtate colțuri ale lumii. De la Constantin Brâncuși, cel care a adus o schimbare de paradigmă în arta plastică modernă prin intermediul binecunoscutelor sale lucrări, până la pictori renumiți precum Nicolae Tonitza și Ștefan Luchian și compozitori geniali asemeni marelui dirijor George Enescu, cu toții au avut un impact semnificativ prin intermediul operelor sale. Un nume care merită, cu siguranță, precizat în această listă este Mihai Eminescu,considerat cel mai mare poet român și una dintre cele mai strălucite figuri ale literaturii universale. Născut pe 15 ianuarie 1850, în Botoșani, el a lăsat o amprentă profundă asupra culturii și identității românești, cu versurile sale pline de sensibilitate, frumusețe și profunzime.
       </p>
 
-      <div class="quotes">
-        <img src="src/icon/quote.png">
-        <div class="quotesText">Trăiască Nația!</div>
-        <div class="author">- Salutul lui Eminescu</div>
+      <div style="display: flex; width: 100%; justify-content: center;">
+        <div class="quotes">
+          <img src="src/icon/quote.png">
+          <div class="quotesText">Sunt Năruit</div>
+          <div class="author">- Ultimele vorbe ale lui Eminescu</div>
+        </div>
       </div>
-    </div>
 
     <h2>&bullet; Pe urmele marelui poet Mihai Eminescu</h2>
 
@@ -63,10 +65,16 @@
       Chemat de Titu Maiorescu la Iași, acesta ajunge să publice la Junimea, unde îl atrage și pe prietenul său, Ion Creangă. De asemenea, odată ajuns la Iași poetul lucrează ca bibliotecar, vânzător la teatru, director școlar și, ulterior, ca revizor școlar.
     </p>
 
-    <div class="quotes">
-      <img src="src/icon/quote.png">
-      <div class="quotesText">Sunt Năruit</div>
-      <div class="author">- Ultimele vorbe ale lui Eminescu</div>
+    <div id="sec3" style="display: flex; justify-content: center;">
+      <iframe width="512" height="329" src="https://www.youtube.com/embed/-weOpcYwcYo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+      <div style="height: 329px; display: flex; align-items: center;">
+        <div class="quotes" style="margin-left: 20px;">
+          <img src="src/icon/quote.png">
+          <div class="quotesText">Trăiască Nația!</div>
+          <div class="author">- Salutul lui Eminescu</div>
+        </div>
+      </div>
     </div>
 
     <h2>&bullet; Muzeul Mihai Eminescu din Iasi</h2>
@@ -90,7 +98,7 @@
       <img src="src/1887.jpg">
     </div>
 
-    <h2>&bullet; Galerie</h2>
+    <h2>&bullet; Galeria Muzeului</h2>
 
     <div style="text-align: center;">
       <div id="cardshowContainer">
@@ -142,14 +150,21 @@
       </div>
     </div>
 
+    <h2>&bullet; Desene reprezentative (de Sanduleasa Daria)</h2>
 
-    <h2>&bullet; Localizare Muzeu</h2>
+    <div style="width: 100%; display: flex; justify-content: center; height: 800px;" id="desene">
+      <img src="src\IMG-20230522-WA0031~2.jpg">
+      <img src="src\IMG-20230522-WA0029~2.jpg">
+      <img src="src\IMG-20230522-WA0030~2.jpg">
+    </div>
+
+    <h2 id="loc">&bullet; Localizare Muzeu</h2>
 
     <div id="sec3" style="width: 100%; display: flex; justify-content: center;">
       <iframe width="850" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.56526052951813%2C47.17843751558366%2C27.56870985031128%2C47.17971187801535&amp;layer=mapnik"></iframe><br/><small></small>
     </div>
 
-    <h2>&bullet; Aplicatie Interactiva</h2>
+    <h2 id="joc">&bullet; Aplicatie Interactiva</h2>
 
     <div style="width: 100%; display: flex; justify-content: center;">
       <iframe style="max-width:100%; margin-bottom: 20px;" src="https://wordwall.net/embed/0e674e70a82a45c7b133e6460f6d3569?themeId=1&templateId=11&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
@@ -157,17 +172,23 @@
   </main>
 
   <footer id="my-footer">
-    <div class="contactBox">
-      <img src="src/icon/phone.png">
-      <div>0770 156 585</div>
+    <div id="line1">
+      <div class="contactBox">
+        <img src="src/icon/phone.png">
+        <div>0770 156 585</div>
+      </div>
+      <div class="contactBox">
+        <img src="src/icon/email.png">
+        <div>muzeul.eminescu.iasi@gmail.com</div>
+      </div>
+      <div class="contactBox">
+        <img src="src/icon/github.png">
+        <a href="https://github.com/teo-101/EminescuProject">Github.com</a>
+      </div>
     </div>
-    <div class="contactBox">
-      <img src="src/icon/email.png">
-      <div>muzeul.eminescu.iasi@gmail.com</div>
-    </div>
-    <div class="contactBox">
-      <img src="src/icon/github.png">
-      <a href="https://github.com/teo-101/EminescuProject">Github.com</a>
+
+    <div id="line2">
+      Website realizat de elevii liceului Grigore Moisil Iasi: Iacob Teodor, Nedelcu Ana-Maria, Nedelcu Stefan si Sanduleasa Daria.
     </div>
   </footer>
   <script src="script/scroll.js"></script>
