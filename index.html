@@ -17,7 +17,7 @@
     <div id="menuContainer">
       <a onclick="document.getElementById('headerContainer').scrollIntoView({behavior:'smooth'});" class="nav-button">Home</a>
       <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('loc').scrollIntoView({behavior:'smooth'});">Find Museum</a>
-      <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('joc').scrollIntoView({behavior:'smooth'});">Activity </a>
+      <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('joc').scrollIntoView({behavior:'smooth'});">Joc</a>
       <a style="margin-left: 20px" class="nav-button" onclick="document.getElementById('my-footer').scrollIntoView({behavior:'smooth'});">Contact</a>
     </div>
   </nav>
@@ -92,19 +92,29 @@
     </p>
 
     <div id="photoContainer">
-      <img src="src/1869.jpg">
-      <img src="src/1878.jpg">
-      <img src="src/1884.jpg">
-      <img src="src/1887.jpg">
+      <div class="imageWrapper">
+        <img src="src/1869.jpg">
+        <div class="hiddenarea">1869</div>
+      </div>
+      <div class="imageWrapper">
+        <img src="src/1878.jpg">
+        <div class="hiddenarea">1789</div>
+      </div>
+      <div class="imageWrapper">
+        <img src="src/1884.jpg">
+        <div class="hiddenarea">1884</div>
+      </div>
+      <div class="imageWrapper">
+        <img src="src/1887.jpg">
+        <div class="hiddenarea">1887</div>
+      </div>
     </div>
+    
 
     <h2>&bullet; Galeria Muzeului</h2>
 
     <div style="text-align: center;">
       <div id="cardshowContainer">
-        <div class="card" id="card0"><img src="src\IMG-20230522-WA0029~2.jpg"></div>
-        <div class="card" id="card1"><img src="src\IMG-20230522-WA0031~2.jpg"></div>
-        <div class="card" id="card2"><img src="src\IMG-20230522-WA0030~2.jpg"></div>
         <div class="card" id="card2"><img src="src\IMG-20230522-WA0003.jpg"></div>
         <div class="card" id="card2"><img src="src\IMG-20230522-WA0007.jpg"></div>
         <div class="card" id="card2"><img src="src\IMG-20230522-WA0008.jpg"></div>
@@ -126,9 +136,6 @@
           <img src="src/icon/arrow.png" width="35px" height="fit-content" style="transform: rotate(90deg);">
         </div>
     
-        <div class="indicator" id="indicator0"></div>
-        <div class="indicator" id="indicator1"></div>
-        <div class="indicator" id="indicator2"></div>
         <div class="indicator" id="indicator2"></div>
         <div class="indicator" id="indicator2"></div>
         <div class="indicator" id="indicator2"></div>
@@ -161,13 +168,13 @@
     <h2 id="loc">&bullet; Localizare Muzeu</h2>
 
     <div id="sec3" style="width: 100%; display: flex; justify-content: center;">
-      <iframe width="850" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.56526052951813%2C47.17843751558366%2C27.56870985031128%2C47.17971187801535&amp;layer=mapnik"></iframe><br/><small></small>
+      <iframe width="900" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=27.56526052951813%2C47.17843751558366%2C27.56870985031128%2C47.17971187801535&amp;layer=mapnik"></iframe><br/><small></small>
     </div>
 
     <h2 id="joc">&bullet; Aplicatie Interactiva</h2>
 
     <div style="width: 100%; display: flex; justify-content: center;">
-      <iframe style="max-width:100%; margin-bottom: 20px;" src="https://wordwall.net/embed/0e674e70a82a45c7b133e6460f6d3569?themeId=1&templateId=11&fontStackId=0" width="500" height="380" frameborder="0" allowfullscreen></iframe>
+      <iframe style="max-width:100%; margin-bottom: 20px;" src="https://wordwall.net/embed/0e674e70a82a45c7b133e6460f6d3569?themeId=1&templateId=11&fontStackId=0" width="900" height="400" frameborder="0" allowfullscreen></iframe>
     </div>
   </main>
 
@@ -187,8 +194,12 @@
       </div>
     </div>
 
-    <div id="line2">
-      Website realizat de elevii liceului Grigore Moisil Iasi: Iacob Teodor, Nedelcu Ana-Maria, Nedelcu Stefan si Sanduleasa Daria.
+    <div id="echipa">
+      <div style="margin-right: 20px;">Iacob Teodor</div>
+      <div style="margin-right: 20px;">Nedelcu Ana-Maria</div>
+      <a href="https://www.liis.ro/" target="_blank" title="Liceul G. Moisil Iasi - Clasa 9D"><img src="src/icon/logoliis.png" width="80px" height="80px"></a>
+      <div style="margin-left: 20px;">Nedelcu Stefan</div>
+      <div style="margin-left: 20px;">Sanduleasa Daria</div>
     </div>
   </footer>
   <script src="script/scroll.js"></script>
