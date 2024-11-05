@@ -198,14 +198,14 @@ p {
 
 .card {
   width: 1800px;
-  height: 400px;
+  height: 600px;
   margin: 0 10px;
   transition: all .4s ease-in-out;
 }
 
 .card img {
   width: fit-content;
-  height: 400px;
+  height: 600px;
 }
 
 #cardshowControls {
